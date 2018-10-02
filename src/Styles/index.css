@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.navbar-right.btn{
+  padding-top:10px;
+}
+.navbar.nav-container{
+  background-color: greenyellow;
+}
+.product-info{
+  border: 1px solid blue;
+  min-width: 3%;
+  max-width: 40%;
+  margin-bottom: 30px;
+}
+.delete-btn{
+  margin:20px;
+}
+
