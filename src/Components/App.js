@@ -1,16 +1,25 @@
 import React, { Component } from "react";
-import Header from "./Header/Header";
-import { Route, Switch } from "react-router-dom";
-import AddProducts from "./AddProducts/AddProducts";
-import DisplayProducts from "../Components/DisplayProducts/DisplayProducts";
+import Form from "../Components/Form/Form";
+import { Switch, Route } from "react-router-dom";
+import UserForm from "../Components/UserForm/UserForm";
+import Address from "../Components/UserForm/Address";
+import ProfessionalDeatils from "../Components/UserForm/ProfessionalInfo";
+import ShowUserDetails from "../Components/UserForm/ShowUserDetails";
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
         <Switch>
-          <Route exact path="/addproducts" component={AddProducts} />
-          <Route exact path="/" component={DisplayProducts} />
+          {/* <Route exact path="/" component={Form} /> */}
+          <Route exact path="/" component={UserForm} />
+          <Route exact path="/address" component={Address} />
+          <Route exact path="/ShowUserDetails" component={ShowUserDetails} />
+          <Route
+            exact
+            path="/professionalInfo"
+            component={ProfessionalDeatils}
+          />
         </Switch>
       </div>
     );
